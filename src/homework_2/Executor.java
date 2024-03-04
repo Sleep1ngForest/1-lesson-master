@@ -13,9 +13,9 @@ import java.util.Random;
 
 public class Executor {
     public void startProgram() {
-        String city = "Красноярск";
+        String city = "Архангельск";
         Cat catVasily = new Cat.Builder()
-                .setName("Васька")
+                .setName("Яша")
                 .setGender("Кот")
                 .setBirthDay(LocalDate.of(2023, 8, 5))
                 .setLocation(city)
@@ -31,21 +31,21 @@ public class Executor {
                 .setName("Иван")
                 .setMiddleName("Иванович")
                 .setGender("Мужской")
-                .setBirthDay(LocalDate.of(1992, 8, 31))
+                .setBirthDay(LocalDate.of(1991, 3, 25))
                 .setLocation(city)
                 .setPets(catVasily)
                 .setPets(fishDolli)
                 .build();
 
         Person person2 = new Person.Builder()
-                .setName("Екатерина")
+                .setName("Валерия")
                 .setGender("Женский")
-                .setBirthDay(LocalDate.of(1995, 5, 5))
+                .setBirthDay(LocalDate.of(1995, 1, 3))
                 .setLocation(city)
                 .build();
 
-        person2.setSecondName("Сидорова");
-        person2.setMiddleName("Анатольевна");
+        person2.setSecondName("Иванова");
+        person2.setMiddleName("Валерьевна");
 
         catVasily.setOwner(person1);
         fishDolli.setOwner(person1);
@@ -63,7 +63,7 @@ public class Executor {
                 .build();
 
 
-        VetClinic vetClinic = new VetClinic(22222, "Ёжик", "Красноярск ул. Такая то");
+        VetClinic vetClinic = new VetClinic(22222, "Шарик", "Архангельск ул. Такая то");
         vetClinic.addEmployee(emp);
         vetClinic.addEmployee(emp2);
         vetClinic.addPatients(catVasily);
