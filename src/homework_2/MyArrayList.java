@@ -1,5 +1,5 @@
 package org.example.homework_2;
-package org.example.homework_3;
+package org.example.homework_3/pharmacy;
 
 import java.util.ArrayList;
 import java.util.Iterator;
